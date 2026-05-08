@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   const token = localStorage.getItem("token");
@@ -119,7 +120,12 @@ const [team, setTeam] = useState("");
 
   // IF NOT LOGGED IN
   if (!token) {
-  return <Login />;
+  return (
+  <>
+  <Signup />
+  <Login />;
+  </>
+  );
 }
 
   return (
