@@ -20,7 +20,7 @@ const [team, setTeam] = useState("");
   const fetchTasks = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/tasks",
+        "https://team-task-managerr-production-60d6.up.railway.app/api/tasks",
         {
           headers: {
             Authorization: token,
@@ -45,7 +45,7 @@ const [team, setTeam] = useState("");
  const addTask = async () => {
   try {
     await axios.post(
-      "http://localhost:5000/api/tasks/create",
+      "https://team-task-managerr-production-60d6.up.railway.app/api/tasks/create",
       {
         title,
         description,
@@ -74,7 +74,7 @@ const [team, setTeam] = useState("");
   const completeTask = async (id) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://team-task-managerr-production-60d6.up.railway.app/api/tasks/${id}`,
         {
           status: "completed",
         },
@@ -95,7 +95,7 @@ const [team, setTeam] = useState("");
   const deleteTask = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://team-task-managerr-production-60d6.up.railway.app/api/tasks/${id}`,
         {
           headers: {
             Authorization: token,
