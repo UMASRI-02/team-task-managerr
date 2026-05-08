@@ -9,6 +9,6 @@
     "cors": "^2.8.5",
     "dotenv": "^17.4.2",
     "express": "^5.1.0",
-    "mongoose": "^9.6.1"
+    "mongoose": "^8.0.0"
   }
 }
