@@ -9,7 +9,7 @@ function Login() {
   const login = async () => {
     try {
       const response = await axios.post(
-        "https://team-task-managerr-production-60d6.up.railway.app/api/auth/login",
+        `${import.meta.env.VITE_API_URL}/api/auth`,
         {
           email,
           password,
