@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server/server.js"
+  },
+  "devDependencies": {
+    "vite": "^8.0.11"
   }
 }
